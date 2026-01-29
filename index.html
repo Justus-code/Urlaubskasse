@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Urlaubskasse</title>
+<link rel="stylesheet" href="style.css" />
+
+</div>
+
+<body>
+<div class="app">
+<h1>🌴 Urlaubskasse</h1>
+
+
+<div id="login">
+<input type="password" id="kassenId" placeholder="Kassen‑ID (4–8 Zahlen)" />
+<button onclick="login()">Kasse erstellen / beitreten</button>
+</div>
+
+
+<div id="kasse" class="hidden">
+<p class="saldo">💰 <span id="betrag">0</span> €</p>
+
+
+<input type="number" id="amount" placeholder="Betrag" />
+<div class="actions">
+<button onclick="addMoney()">+ Hinzufügen</button>
+<button onclick="removeMoney()">− Abheben</button>
+</div>
+
+
+<button class="logout" onclick="logout()">Kasse verlassen</button>
+</div>
+
+
+<footer>
+<a href="#" onclick="showPrivacy()">Datenschutz</a>
+</footer>
+</div>
+
+
+
+</div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
